@@ -1,0 +1,215 @@
+*{box-sizing: border-box;
+}
+
+nav{ 
+    background-color: rgba(0, 0, 0, 0.319);
+}
+nav ul{text-align: center;
+}
+ul li{ 
+    list-style: none;
+    line-height: 5em;
+    display: inline-block;
+    text-align: center;
+}
+ul li a{
+    font-size: 23px;
+    font-weight: 800;
+    text-decoration: none; 
+    color: rgb(236, 122, 210);
+    padding: 12px;
+    font-family: 'impact';
+    text-align: center;
+    display: block;
+}
+nav ul li a.active{color: white;}
+a:hover{color: rgb(255, 255, 255);transition: 0.2s;}
+
+/*End style nav*/
+.HOME h1{
+    font-size:96px; 
+    color: rgba(236, 122, 209, 0.969); 
+    font-weight: 800;
+    font-family: 'impact';
+    letter-spacing: 2px;
+    position:absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+.HOME h1 {
+    color: rgb(236, 122, 209); 
+    justify-items: center;
+}
+.HOME main a{ 
+    text-decoration: none; 
+    display: inline-block;  
+    color: rgb(255, 255, 255) ; 
+    font-size: 21px; 
+    border: 2.5px solid rgb(255, 255, 255);
+    padding: 10px 32px;
+    border-radius: 5%;
+    font-family: 'impact';
+    position: absolute;
+    top: 60%;
+    left: 49%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.HOME main a:hover{background: rgba(236, 122, 209, 0.918);transition: 0.3s;}
+
+.back-video{
+    position:absolute;
+    background-size: cover;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;;
+}
+footer{
+    font-family: 'impact';
+    font-weight: 400; 
+    letter-spacing: 1px;
+    top: 95%;
+    position: absolute;
+    color: rgb(255, 255, 255);}
+
+/*End style Home*/
+
+
+/*start style Graffiti*/
+
+h1,h2,h3 {font-family:'Tahoma';color: rgb(255, 255, 255);font-size: 21px;}
+
+p{color: rgb(236, 122, 209);font-family: monospace; font-weight: 400; font-size: large ;}
+ 
+h1 {text-align: center;}
+
+  
+/* cornbread */
+.cornbread{
+width: 100vw;
+height: 100vh;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items:center;
+gap: 1em;
+
+}
+.right1{
+    width: 50vw;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.right1 img{width: 50vw;height:100vh;}
+.textbox1{width: 50vw;}
+
+/* taki */
+.taki{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    gap: 1em;
+    
+    }
+    .right2{
+        width: 50vw;
+        height: 100vh;
+    }
+    .right2 img{width: 50vw;height:100vh;}
+    .textbox2{width: 50vw;scroll-snap-align: start;}
+
+/* banksy */
+.banksy{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    gap: 1em;
+ 
+    }
+    .right3{
+        width: 50vw;
+        height: 100vh;}
+    .right3 img{width: 50vw;height:100vh;}
+    .textbox3{width: 50vw;}
+
+/* bleklerat */
+.bleklerat{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    gap: 1em;
+    
+    }
+    .right4{
+        width: 50vw;
+        height: 100vh;
+        
+    }
+    .right4 img{width: 50vw;height:100vh;}
+    .textbox4{width: 50vw;}
+
+
+
+/*eind notorious en begin styles*/
+.grid-container h1,h3{color: rgb(255, 255, 255);text-align: center;}
+.grid-container{
+width: 95vw;
+height: 100vh;
+display: grid;
+grid-template-columns:repeat(7, 1fr);
+grid-column-gap:2em;
+margin-left: 2em;
+}
+.grid-container img{width: 45em;height: 30em;}
+body{background-image: url(illustrations/7achter.jpeg);}
+
+.notorious{width: 100%;
+height:100vh ;
+overflow-y: scroll;
+scroll-snap-type:proximity;}
+
+
+
+
+
+
+
+
+
+
+/*Start media queries*/
+@media(max-width:1402px){
+   #HOME h1, h1{font-size:73px;}
+    #HOME main a{font-size: 22px;}
+}
+@media(max-width:1089px){
+    #HOME h1{font-size:64px;}
+    #HOME main a{font-size: 20px;}
+}
+
+@media(max-width:972px){
+    #HOME h1{font-size:55px;}
+    #HOME main a{font-size: 20px;}
+}
+@media(max-width:835px){
+    #HOME nav a{font-size: 18px;}
+    #HOME h1{font-size:36.5px;}
+    #HOME main a{font-size: 20px;}
+}
+@media(max-width:646px){
+    #HOME nav a{font-size: 18px;}
+    #HOME h1{font-size:28x;}
+    #HOME main a{font-size: 20px;}
+}
+@media(max-width:559px){
+    #HOME nav a{font-size: 17px;}
+    #HOME h1{font-size:30px;}
+    #HOME main a{font-size: 16px;}
+}
